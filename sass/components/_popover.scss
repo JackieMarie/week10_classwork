@@ -1,0 +1,16 @@
+.popover {
+  padding: $spacer-m;
+  background-color: grey;
+  visibility: hidden;
+  opacity: 0;
+
+  &__trigger {
+    color: blue;
+  }
+
+  &--active {
+      visibility: visible;
+      opacity: 1;
+
+    }
+}

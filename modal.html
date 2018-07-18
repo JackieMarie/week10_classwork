@@ -17,14 +17,14 @@
             <a href="modal-new.html">Modal</a>
           </li>
           <li class="nav__list__item">
-            <a href="popover-new.html">Popover</a>
+            <a href="popover-.html">Popover</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main">
       <div class="guide__section-group">
-          <button class="button--primary modal__trigger-btn">Click for Modal</button>
+          <button class="button--primary modal__trigger-btn" id="modal_trigger">Click for Modal</button>
           <div class="modal" aria-hidden="true">
             <div class="modal__overlay">
               <div class="modal__container">
@@ -33,7 +33,7 @@
                     x
                   </a>
                   <header class="modal__header">
-                    <h3 class="title">Modal Title</h3>
+                    <h3 class="title">Login</h3>
                     <p class="modal-intro">Intro text lorem ipsum dolor sit ametm, quas, eaque facilis aliquid cupiditate tempora cumque ipsum accusantium illo modi commodi  minima.</p>
                   </header>
                   <div>
@@ -41,7 +41,7 @@
                     <div class="modal__actions">
                       <ul class="modal__actions-list">
                         <li class="modal__actions-item">
-                          <button class="button--default button--full modal__close">Cancel</button>
+                          <button class="button--default button--full modal__close" class="button--secondary">Cancel</button>
                         </li>
                         <li class="modal__actions-item">
                           <button class="button--danger button--full">Delete</button>
@@ -55,5 +55,7 @@
           </div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src=js/modal.js></script>
   </body>
 </html>
