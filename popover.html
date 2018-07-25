@@ -23,14 +23,78 @@
       </nav>
     </header>
     <main class="main">
-      <div class = "popover__container">
-        <a href="#" class="popover__trigger">Popover Trigger</a>
-        <div class="popover">
-          <h2>Hello</h2>
-        </div>
-      </div>
+      <form>
+        <label for="name">name</label>
+        <input type="text" id="name" name="name" placeholder="Name*" required class="required" />
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" placeholder="Email Address*" required class="input"/>
+        <label for="tel">telephone</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Phone Number" required class="input"/>
+        <label class="input__label" for="method">Contact Method</label>
+        <select name="contactmethod" id="contactmethod" required>
+          <option selected>Contact Preference?</option>
+            <option value="phone">Phone</option>
+            <option value="email">Email</option>
+            <option value="no_preference">No Preference</option>
+        </select>
+        <label class="input__label" for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Tell us more*" class="input" rows="15" required></textarea>
+        <input class="button__primary" value="Submit" type="submit" />
+        <input class="button__secondary" type="reset" id="reset" value="Reset" />
+      </form>
     </main>
+    <footer>&copy;Copywright Jackie</footer>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src=js/popover.js></script>
   </body>
 </html>
+
+<form id="form" name="form" method="post" action="form.php" onsubmit="return validateForm(this)" autocomplete="on">
+
+    <!--Checkbox - pick type of services-->
+  <fieldset>
+
+    <p>What Services Are You Interested In?</p>
+    <input type="checkbox" name="services" id="ideas" value="ideas" />	<label for="ideas">Ideas</label>
+
+    <input type="checkbox" name="services" id="branding" value="branding" />
+    <label for="branding">Branding</label>
+
+    <input type="checkbox" name="services" id="uxui" value="uxui" />
+    <label for="uxui">UX/UI</label>
+
+    <input type="checkbox" name="services" id="code" value="code" />
+    <label for="code">Code</label>
+
+
+    <p>Tell me about your project...what is it? Why are you doing it? What do you hope to accomplish? Timeline and budget details are also appreciated.</p>
+      <textarea name="comments" id="comments" placeholder="Tell us more*"></textarea>
+
+  </fieldset>
+
+  <fieldset>
+
+    <p>Thanks for the information. How do we contact you?</p>
+
+
+    <input type="text" id="name" name="name" placeholder="Name*" required />
+
+
+    <input type="email" id="email" name="email" placeholder="Email Address*" required />
+
+
+    <input type="tel" id="telephone" name="telephone" placeholder="Phone Number" />
+
+    <select name="contactmethod" id="contactmethod">
+      <option selected>Contact Preference?</option>
+        <option value="phone">Phone</option>
+        <option value="email">Email</option>
+        <option value="no_preference">No Preference</option>
+    </select>
+  </fieldset>
+
+
+  <input type="submit" id="submit" value="Submit" />
+  <input type="reset" id="reset" value="Reset" />
+
+</form>

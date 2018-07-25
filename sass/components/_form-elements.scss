@@ -9,6 +9,12 @@
   // padding: $spacer-m;
   font-size: 14px;
   margin-bottom: $spacer-m;
+  display: block;
+
+  &__label {
+    display: block;
+    margin-bottom: $spacer-xs;
+  }
 }
 
 // Select Form Input Styling
